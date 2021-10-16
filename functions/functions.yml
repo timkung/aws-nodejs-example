@@ -1,0 +1,31 @@
+create:
+  handler: handler.create
+  events:
+    - http:
+        path: todos
+        method: post
+        cors: true
+
+getAll:
+  handler: handler.getAll
+  events:
+    - http:
+        path: todods
+        method: get
+        cors: true
+
+update:
+  handler: handler.update
+  events:
+    - http:
+        path: todos/{id}
+        method: put
+        cors: true
+
+delete:
+  handler: handler.delete
+  events:
+    - http:
+        path: todos/{id}
+        method: delete
+        cors: true
