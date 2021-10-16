@@ -1,0 +1,15 @@
+{
+  "name": "aws-nodejs-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:timkung/aws-nodejs-example.git",
+  "author": "Tim Kung <timkung.90@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^8.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.11"
+  }
+}
