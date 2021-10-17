@@ -10,9 +10,30 @@ provider:
   timeout: 10
   stage: dev
   region: ap-southeast-2
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - 'dynamodb:*'
+          Resource:
+            - 'arn:aws:dynamodb:*:*'
 
 functions:
   - ${file(./functions/functions.yml)}
 
+resources:
+  Resources:
+    ${file(./resources/dynamodb.yml)}
+
+custom:
+  dynamodb:
+    stages:
+      - dev
+    start:
+      inMemory: true
+      migrate: true
+
 plugins:
+  - serverless-dynamodb-local
   - serverless-offline

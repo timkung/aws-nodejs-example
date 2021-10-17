@@ -14,3 +14,6 @@ This is just an example app using AWS Lambda and DynamoDB.
 ## More information
 
 * [Serverless Functions](https://www.serverless.com/framework/docs/providers/aws/guide/functions)
+* [NodeJS Handlers](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-handler.html)
+* [Serverless Resources](https://www.serverless.com/framework/docs/providers/aws/guide/resources)
+* [AWS SDK - DynamoDB](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-dynamodb/index.html)

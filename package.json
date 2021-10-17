@@ -6,6 +6,7 @@
   "author": "Tim Kung <timkung.90@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40",
     "serverless-offline": "^8.2.0"
   },
   "dependencies": {
